@@ -1,0 +1,25 @@
+
+subprojects {
+  apply plugin: 'java'
+  apply plugin: 'eclipse'
+  apply plugin: 'maven'
+  apply plugin: 'idea'
+
+  sourceCompatibility = 1.8
+  targetCompatibility = 1.8
+
+
+  group = 'org.apache.gombari'
+  version = projVersion
+
+  repositories {
+    mavenCentral()
+  }
+
+  task copyDeps(type: Copy) {
+    from configurations.runtime
+    into 'build/libs'
+  }
+
+  build.dependsOn copyDeps
+}

@@ -1,0 +1,5 @@
+
+dependencies {
+  compile group: 'org.drools', name: 'drools-core', version: droolsVersion
+  compile group: 'org.drools', name: 'drools-compiler', version: droolsVersion
+}

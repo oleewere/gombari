@@ -1,0 +1,4 @@
+rootProject.name = 'gombari-rules'
+include 'gombari-rules-core'
+include 'gombari-rules-rest'
+

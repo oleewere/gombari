@@ -1,0 +1,20 @@
+dependencies {
+  compile group: 'javax.servlet', name: 'javax.servlet-api', version: servletVersion
+
+  compile group: 'org.glassfish.jersey.core', name: 'jersey-client', version: jerseyVersion
+  compile group: 'org.glassfish.jersey.connectors', name: 'jersey-apache-connector', version: jerseyVersion
+  compile group: 'org.glassfish.jersey.media', name: 'jersey-media-json-jettison', version: jerseyVersion
+  compile group: 'org.glassfish.jersey.media', name: 'jersey-media-json-jackson', version: jerseyVersion
+  compile group: 'org.glassfish.jersey.ext', name: 'jersey-bean-validation', version: jerseyVersion
+
+  compile group: 'org.eclipse.jetty', name: 'jetty-server', version: jettyVersion
+  compile group: 'org.eclipse.jetty', name: 'jetty-servlet', version: jettyVersion
+  compile group: 'org.eclipse.jetty', name: 'jetty-util', version: jettyVersion
+  compile group: 'org.eclipse.jetty', name: 'jetty-webapp', version: jettyVersion
+  compile group: 'org.eclipse.jetty', name: 'jetty-annotations', version: jettyVersion
+
+  compile group: 'io.swagger', name: 'swagger-jersey2-jaxrs', version: swaggerVersion
+  compile group: 'io.swagger', name: 'swagger-core', version: swaggerVersion
+  compile group: 'io.swagger', name: 'swagger-annotations', version: swaggerVersion
+  compile group: 'io.swagger', name: 'swagger-models', version: swaggerVersion
+}
